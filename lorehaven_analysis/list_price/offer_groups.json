@@ -1,0 +1,20 @@
+{
+  "acquisition": {
+    "n": 4032066,
+    "signup_baseline": 0.08620838802028688,
+    "signup_lift": 0.035431795604345,
+    "signup_se": 0.0004633486026054239,
+    "revenue_baseline": 1.293121574926969,
+    "revenue_lift": 0.34775562648700764,
+    "revenue_se": 0.006402966553876354
+  },
+  "acquisition_promo": {
+    "n": 4869519,
+    "signup_baseline": 0.0852262909911868,
+    "signup_lift": 0.04324548572800744,
+    "signup_se": 0.0004639717346493758,
+    "revenue_baseline": 1.2634167394296205,
+    "revenue_lift": 0.3373838359197445,
+    "revenue_se": 0.006122303164790247
+  }
+}

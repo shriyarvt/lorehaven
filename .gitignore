@@ -1,0 +1,16 @@
+# Only the simulator and the analysis package are part of this repo.
+/*
+!.gitignore
+!lorehaven_sim/
+!lorehaven_analysis/
+
+# Secrets and local environments
+**/.env
+**/secrets.toml
+.venv/
+
+# Caches
+**/__pycache__/
+**/.pytest_cache/
+**/*.py[cod]
+**/.DS_Store

@@ -1,0 +1,59 @@
+step,spec,outcome,term,estimate,se,ci_low,ci_high,stat,df,pvalue,n,customers,note
+0,reproduce,signup,treated_post,0.035431795604345,0.0004633486026054236,0.03452363234323837,0.03633995886545163,,,,4032066.0,504622.0,Matches the published headline.
+0,reproduce,revenue,treated_post,0.34775562648700764,0.006402966553876354,0.33520581204141,0.3603054409326053,,,,4032066.0,504622.0,Matches the published headline.
+1,reconcile,member_count,max_abs_gap,0.0,,,,,,,5610979.0,,Panel stock versus aggregate.csv member_count.
+1,all_customers_did,revenue,treated_post,0.35304653289518684,0.010718319883385868,0.33203862592375055,0.3740544398666231,,,,5610979.0,510089.0,"Every customer, spring 2017–fall 2019. Includes recurring members."
+1,all_customers_total,revenue,treated_post_times_post_treated_rows,378839.40649544337,,,,,,,1073058.0,,Per-person effect times post-cut customer-seasons in the five regions. Not a new regression.
+1,all_customers_did,member,treated_post,0.11231479916869667,0.0008245819787357935,0.11069861849037452,0.11393097984701883,,,,5610979.0,510089.0,"Every customer, spring 2017–fall 2019. Includes recurring members."
+1,all_customers_total,member,treated_post_times_post_treated_rows,120520.29376636332,,,,,,,1073058.0,,Per-person effect times post-cut customer-seasons in the five regions. Not a new regression.
+2,placebo_in_time,signup,cut_8070,0.00103473412411895,0.0007369194208836127,-0.0004096279408129309,0.0024790961890508306,,,,3037125.0,503079.0,"acquisition. Fake cut at 2017 summer, using only seasons through winter 2019."
+2,placebo_in_time,signup,cut_8071,-0.0013165367438346591,0.0004941080258324199,-0.002284988474466202,-0.00034808501320311616,,,,3037125.0,503079.0,"acquisition. Fake cut at 2017 fall, using only seasons through winter 2019."
+2,placebo_in_time,signup,cut_8072,-0.0028632019207805105,0.0004388803029342453,-0.0037234073145316314,-0.0020029965270293897,,,,3037125.0,503079.0,"acquisition. Fake cut at 2018 winter, using only seasons through winter 2019."
+2,placebo_in_time,signup,cut_8073,-0.0011630351338530129,0.0004428406823980059,-0.0020310028713531043,-0.0002950673963529213,,,,3037125.0,503079.0,"acquisition. Fake cut at 2018 spring, using only seasons through winter 2019."
+2,placebo_in_time,signup,cut_8074,-0.008442283002296496,0.0005278732443942265,-0.009476914561309181,-0.007407651443283812,,,,3037125.0,503079.0,"acquisition. Fake cut at 2018 summer, using only seasons through winter 2019."
+2,placebo_in_time,signup,cut_8075,-0.002280171896891122,0.0005652208695805396,-0.003388004801268979,-0.0011723389925132643,,,,3037125.0,503079.0,"acquisition. Fake cut at 2018 fall, using only seasons through winter 2019."
+2,placebo_in_time,signup,cut_8076,-0.011479616912175876,0.0009623497636942357,-0.013365822449016579,-0.009593411375335174,,,,3037125.0,503079.0,"acquisition. Fake cut at 2019 winter, using only seasons through winter 2019."
+2,placebo_summary,signup,placebos_at_least_as_large,0.0,,,,7.0,,,4032066.0,504622.0,acquisition. Count of pre-period placebos with absolute effect at least the real estimate 0.0354.
+2,leave_one_region_out,signup,drop_avonlea,0.03534423104430902,0.00047061002650930234,0.03442183539235079,0.03626662669626725,,,,3857585.0,479578.0,acquisition. Panem stays the control.
+2,leave_one_region_out,signup,drop_essos,0.03574902354468605,0.0005041047603644573,0.03476097821437171,0.03673706887500039,,,,3316449.0,403743.0,acquisition. Panem stays the control.
+2,leave_one_region_out,signup,drop_hogsmeade,0.03581731081122883,0.0004936835273428524,0.03484969109763684,0.036784930524820826,,,,3486337.0,428623.0,acquisition. Panem stays the control.
+2,leave_one_region_out,signup,drop_hundred acre wood,0.03560009271165971,0.0004824841139929915,0.034654423848233445,0.036545761575085975,,,,3668289.0,454282.0,acquisition. Panem stays the control.
+2,leave_one_region_out,signup,drop_westeros,0.034648065342936685,0.000502225590000874,0.03366370318653497,0.0356324274993384,,,,3322278.0,404665.0,acquisition. Panem stays the control.
+2,placebo_in_time,revenue,cut_8070,0.19171222110577574,0.011155977531207154,0.16984650514460972,0.21357793706694175,,,,4080712.0,510089.0,"all_customers. Fake cut at 2017 summer, using only seasons through winter 2019."
+2,placebo_in_time,revenue,cut_8071,0.17373314851300348,0.010842045202827843,0.1524827399154609,0.19498355711054605,,,,4080712.0,510089.0,"all_customers. Fake cut at 2017 fall, using only seasons through winter 2019."
+2,placebo_in_time,revenue,cut_8072,0.10283363509335987,0.011057609661081954,0.08116072015763924,0.1245065500290805,,,,4080712.0,510089.0,"all_customers. Fake cut at 2018 winter, using only seasons through winter 2019."
+2,placebo_in_time,revenue,cut_8073,0.04965287269693999,0.01150590926329953,0.027101290540872916,0.07220445485300707,,,,4080712.0,510089.0,"all_customers. Fake cut at 2018 spring, using only seasons through winter 2019."
+2,placebo_in_time,revenue,cut_8074,-0.10156010283244865,0.013800913900766428,-0.12860989407795084,-0.07451031158694646,,,,4080712.0,510089.0,"all_customers. Fake cut at 2018 summer, using only seasons through winter 2019."
+2,placebo_in_time,revenue,cut_8075,-0.10813128443218721,0.012667433784366258,-0.13295945464954506,-0.08330311421482935,,,,4080712.0,510089.0,"all_customers. Fake cut at 2018 fall, using only seasons through winter 2019."
+2,placebo_in_time,revenue,cut_8076,-0.17224870069847767,0.014936297894275585,-0.20152384457125783,-0.1429735568256975,,,,4080712.0,510089.0,"all_customers. Fake cut at 2019 winter, using only seasons through winter 2019."
+2,placebo_summary,revenue,placebos_at_least_as_large,0.0,,,,7.0,,,5610979.0,510089.0,all_customers. Count of pre-period placebos with absolute effect at least the real estimate 0.3530.
+2,leave_one_region_out,revenue,drop_avonlea,0.3508276821839285,0.010798035875475957,0.32966353186799563,0.3719918324998614,,,,5329401.0,484491.0,all_customers. Panem stays the control.
+2,leave_one_region_out,revenue,drop_essos,0.3472203450855708,0.011152935343971748,0.3253605918113862,0.3690800983597554,,,,4482852.0,407532.0,all_customers. Panem stays the control.
+2,leave_one_region_out,revenue,drop_hogsmeade,0.36206249247184574,0.011024122599859005,0.34045521217612207,0.3836697727675694,,,,4764045.0,433095.0,all_customers. Panem stays the control.
+2,leave_one_region_out,revenue,drop_hundred acre wood,0.3669352356737024,0.010908597505418824,0.3455543845630815,0.3883160867843233,,,,5050606.0,459146.0,all_customers. Panem stays the control.
+2,leave_one_region_out,revenue,drop_westeros,0.33521041572947013,0.011141666852368328,0.3133727486988282,0.3570480827601121,,,,4493445.0,408495.0,all_customers. Panem stays the control.
+2,placebo_in_time,member,cut_8070,0.027199420258446242,0.0007798633579092811,0.02567088807694405,0.028727952439948433,,,,4080712.0,510089.0,"all_customers. Fake cut at 2017 summer, using only seasons through winter 2019."
+2,placebo_in_time,member,cut_8071,0.02384013693432351,0.0007643150669225522,0.022342079403155305,0.025338194465491713,,,,4080712.0,510089.0,"all_customers. Fake cut at 2017 fall, using only seasons through winter 2019."
+2,placebo_in_time,member,cut_8072,0.018754180718780957,0.0007807859543368102,0.01722384024828081,0.020284521189281104,,,,4080712.0,510089.0,"all_customers. Fake cut at 2018 winter, using only seasons through winter 2019."
+2,placebo_in_time,member,cut_8073,0.015280187543166714,0.0008115293111382775,0.01368959009333569,0.01687078499299774,,,,4080712.0,510089.0,"all_customers. Fake cut at 2018 spring, using only seasons through winter 2019."
+2,placebo_in_time,member,cut_8074,0.008007577047703605,0.0009683065292053436,0.006109696250461132,0.009905457844946078,,,,4080712.0,510089.0,"all_customers. Fake cut at 2018 summer, using only seasons through winter 2019."
+2,placebo_in_time,member,cut_8075,0.010470689698025911,0.0008971343649137771,0.008712306342794908,0.012229073053256915,,,,4080712.0,510089.0,"all_customers. Fake cut at 2018 fall, using only seasons through winter 2019."
+2,placebo_in_time,member,cut_8076,0.005129355507976685,0.0010377180996367832,0.0030954280326885904,0.00716328298326478,,,,4080712.0,510089.0,"all_customers. Fake cut at 2019 winter, using only seasons through winter 2019."
+2,placebo_summary,member,placebos_at_least_as_large,0.0,,,,7.0,,,5610979.0,510089.0,all_customers. Count of pre-period placebos with absolute effect at least the real estimate 0.1123.
+2,leave_one_region_out,member,drop_avonlea,0.11142431390095323,0.0008367630008370403,0.10978425841931262,0.11306436938259383,,,,5329401.0,484491.0,all_customers. Panem stays the control.
+2,leave_one_region_out,member,drop_essos,0.11113124804959323,0.0008884909402411567,0.10938980580672057,0.1128726902924659,,,,4482852.0,407532.0,all_customers. Panem stays the control.
+2,leave_one_region_out,member,drop_hogsmeade,0.11406738706171594,0.0008697754307371928,0.11236262721747105,0.11577214690596084,,,,4764045.0,433095.0,all_customers. Panem stays the control.
+2,leave_one_region_out,member,drop_hundred acre wood,0.11462243419763099,0.0008528434695967011,0.11295086099722146,0.11629400739804052,,,,5050606.0,459146.0,all_customers. Panem stays the control.
+2,leave_one_region_out,member,drop_westeros,0.10996364955258889,0.0008874991437425842,0.10822415123085342,0.11170314787432435,,,,4493445.0,408495.0,all_customers. Panem stays the control.
+3,ppml_did,signup,treated_post,0.765453202737901,0.009842040329248939,0.746162803692573,0.7847436017832289,,,,4032066.0,504622.0,Log coefficient. Rate ratio is exp(estimate).
+3,ppml_did,signup,rate_ratio,2.149968525516793,0.021160076934752154,2.108494774724679,2.191442276308907,,,,4032066.0,504622.0,exp(treated x post). Break-even versus $15 is a rate ratio of 1.25.
+5,did_lapsed,signup,treated_post,0.14606007362934376,0.0030754001574883,0.1400322893206667,0.15208785793802082,,,,218497.0,61267.0,"At-risk customers paying list price, this type only."
+5,did_lapsed,revenue,treated_post,1.5062141480770026,0.04238391736511818,1.423141670041371,1.5892866261126342,,,,218497.0,61267.0,"At-risk customers paying list price, this type only."
+5,did_new,signup,treated_post,0.03768022393117389,0.00044837658386737204,0.03680140582679384,0.038559042035553937,,,,3813569.0,504622.0,"At-risk customers paying list price, this type only."
+5,did_new,revenue,treated_post,0.4153984581084979,0.0062070455552813,0.40323264882014653,0.4275642673968493,,,,3813569.0,504622.0,"At-risk customers paying list price, this type only."
+6,promo_elasticity,signup,pre_$10_vs_$14,-3.540277605988813,,,,,,,,,"log(10 rate / 14 rate) / log(10/14), adjusted promo sign-up rates."
+6,promo_elasticity,signup,post_$7_vs_$11,-2.4280171894329485,,,,,,,,,"log(7 rate / 11 rate) / log(7/11), adjusted promo sign-up rates."
+6,did_elasticity,signup,$12_vs_$15,-4.026631572067602,0.0004633486026054236,-4.027539735328709,-4.0257234088064955,,,,,,"log(counterfactual rate plus effect, over counterfactual) / log(12/15). Acquisition sample."
+4,region_season_of_year,signup,treated_post,0.01033655,0.00043573,0.0094825192,0.0111905808,,,,4032066.0,504622.0,"List-price sign-up. Each region keeps its own season-of-year level, plus a year shift."
+4,region_season_of_year,member,treated_post,0.08070635,0.00067916,0.0793751964,0.08203750359999999,,,,5610979.0,510089.0,"All customers. Each region keeps its own season-of-year level, plus a year shift."
+4,region_season_of_year,revenue,treated_post,-0.05501546,0.00875352,-0.07217235920000001,-0.037858560799999996,,,,5610979.0,510089.0,"All customers. Each region keeps its own season-of-year level, plus a year shift."
